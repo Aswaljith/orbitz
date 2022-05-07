@@ -375,9 +375,12 @@ li
 #right
 {
     width: 35%;
+    display: grid;
+    grid-template-columns: (1,1fr);
 }
 .card
 {
+    height: 400px;
     background-color: white;
     border-radius: 3px;
     position: relative;
@@ -386,9 +389,9 @@ li
     
 }
 
-.card>div>img
+.cardimg>img
 {
-    width: 100%;
+    width: auto;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -409,7 +412,7 @@ li
     margin-bottom: 10px;
 }
 
-.cardcont>h4+p+p
+.cardcont>p:nth-child(5)
 {
     margin-bottom: 10px;
 }
@@ -422,7 +425,7 @@ li
 .cardimg>h5
 {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 15px;
     color: white;
 }
