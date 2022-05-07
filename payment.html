@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="payment.css" />
-    <link rel="stylesheet" href="payment.js">
+    <!-- <link rel="stylesheet" href="payment.js" /> -->
     <script src="https://kit.fontawesome.com/b1aa49fc63.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -194,7 +194,7 @@
             </div>
         </div>
         <div id="right">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="cardimg">
                     <img src="https://images.trvl-media.com/hotels/67000000/66040000/66031300/66031217/b97c090e_l.jpg" alt="">
                     <h5>The Westin Goa</h5>
@@ -206,7 +206,7 @@
                     <p>Check-in: Wed, May 18</p>
                     <p>Check-out: Thu, May 19</p>
                     <p>1-night stay</p>
-                </div>
+                </div> -->
             </div>
             <div id="amount">
                 <h3>Price details</h3>
@@ -236,4 +236,75 @@
         <h1>footer</h1>
     </div>
 </body>
+<script>
+    var data=[]
+    var dataobj=
+    {
+        img:"https://images.trvl-media.com/hotels/67000000/66040000/66031300/66031217/b97c090e_l.jpg",
+        itemname:"The Westin Goa",
+        review:"4.8/5 Exceptional (11 reviews)",
+        desc:"1 Room: Room, 2 Double Beds, Non Smoking, City View",
+        fromdate:"Check-in: Wed, May 18",
+        todate:"Check-out: Thu, May 19",
+        totaldays:"1-night stay",
+        amount:"$180.01"
+    }
+
+    data.push(dataobj)
+    localStorage.setItem("booking-data",JSON.stringify(data))
+
+
+    var lsdata=JSON.parse(localStorage.getItem("booking-data"))
+   
+    lsdata.forEach(function(ele)
+    {
+        var container = document.querySelector("#right")
+        var card = document.createElement("div")
+        container.className = ("card")
+        container.append(card)
+
+        var imgsec = document.createElement("div")
+        imgsec.className = ("cardimg")
+
+        var img = document.createElement("img")
+        img.style.width="100%"
+        img.src = ele.img
+        var itemname = document.createElement("h5")
+        itemname.textContent = ele.itemname
+        
+        imgsec.append(img,itemname)
+
+        var cardcont = document.createElement("div")
+        cardcont.className = ("cardcont")
+        var review = document.createElement("h4")
+        review.textContent = ele.review
+
+        var desc = document.createElement("p")
+        desc.textContent = ele.desc
+
+        var fromdate = document.createElement("p")
+        fromdate.textContent = ele.fromdate
+
+        var todate = document.createElement("p")
+        todate.textContent = ele.todate
+
+        var totaldays = document.createElement("p")
+        totaldays.textContent = ele.totaldays
+
+        var amount = document.createElement("p")
+        amount.textContent = ele.amount
+
+        cardcont.append(review,desc,fromdate,todate,totaldays,amount)
+        card.append(imgsec,cardcont)
+
+        var amountsec = document.querySelector("#amount")
+        var 
+        
+
+    })
+  
+
+
+
+</script>
 </html>
