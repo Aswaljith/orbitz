@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="p1.css" />
+    <title>Goa</title>
+</head>
+
+<body>
+    <div id link="stay.html"></div>
+    <div class="container">
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/530000/523000/522986/ec1730f3_b.jpg"
+                    alt="" class="card-img">
+                </div>
+            <h3 class="card-heading">Goa Marriott Resort & Spa
+            </h3>
+            <p class="card-text">Panaji</p>
+            <p class="card-text">4.5/5 Wonderful</p>
+            
+            <h2> $419 <del> $699</del><span>total </span> </h2>
+            <button onclick="reserve">Reserve</button>
+        </div>
+
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/20000000/19220000/19218500/19218418/8be2ba2b_b.jpg"
+                    alt="" class="card-img">
+                </div>
+            <h3 class="card-heading">Le Méridien Goa, Calangute</h3>
+            <p class="card-text">Calangute</p>
+            <p class="card-text">4.4/5 Excellent</p>
+            <h2> $419 <del>$699</del> <span> total</span> </h2>
+            <button onclick="reserve">Reserve</button>
+
+
+        </div>
+
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/31000000/30790000/30783800/30783748/4ec39822_b.jpg"                  alt="" class="card-img">
+                </div>
+            <h3 class="card-heading"> ITC Grand Resort & Spa,Goa</h3>
+            <p class="card-text">Arossim</p>
+            <p class="card-text">4.2/5 Very Good</p>
+            <h2> $419 <del> $699</del> <span> total </span> </h2>
+            <button onclick="reserve">Reserve</button>
+
+        </div>
+
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/25000000/24060000/24057300/24057290/7d26f557_b.jpg"
+                    alt="" class="card-img">
+                </div>
+            <h3 class="card-heading">Hilton Goa Resort</h3>
+            <p class="card-text">Saipem </p>
+            <p class="card-text">4.2/5 Very Good</p>
+            <h2> $419 <del>$699</del> <span> total  </span> </h2>
+            <button onclick="reserve">Reserve</button>
+
+        </div>
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/25000000/24050000/24041500/24041444/6e5fde29_b.jpg"
+                    alt="" class="card-img">
+                </div>
+            <h3 class="card-heading">Azaya Beach Resort</h3>
+            <p class="card-text">Benaulim </p>
+            <p class="card-text">4.1/5 Very Good</p>
+            <h2> $419 <del>$699</del> <span> total  </span> </h2>
+            <button onclick="reserve">Reserve</button>
+
+        </div>
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/16000000/15520000/15518800/15518705/61ac74e1_b.jpg"
+                    alt="" class="card-img">
+                </div>
+            <h3 class="card-heading">Fairfield by Marriott Goa </h3>
+            <p class="card-text">Anjuna</p>
+            <p class="card-text">4.1/5 Very Good</p>
+            <h2> $419 <del>$699</del> <span> total  </span> </h2>
+            <button onclick="reserve">Reserve</button>
+
+
+</div></div></body></html>
+
+
+<script>
+const search=()=>{
+    const searchbox=document.getElementById("search").value;
+    const storeitem=document.getElementById("card")
+    const product=document.querySelectorAll("box-img")
+    const pname=document.getElementByTagName("h2")
+
+    for(var i =0;i<pname.length;i++)
+    {
+        let match=product[i].getElementsByTagName('h2')[0];
+
+        if(match){
+            let textvalue=match.textContent|| match.innerHTML
+
+            if(textvalue.toUpperCase().indexOf(searchbox)>-1){
+                product[i].style.display="";
+            }
+            else{
+                product[i].style.display="none";
+            }
+        }
+    }
+}
+
+
+
+</script>
