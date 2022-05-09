@@ -49,7 +49,6 @@ function search(){
 
 document.querySelector("#flightDetails").addEventListener("click",myFun);
 function myFun(){
-    event.preventDefault()
     var data = [
         {
             departing:"Delhi to Goa",
