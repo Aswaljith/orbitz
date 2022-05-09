@@ -244,36 +244,36 @@ input
     width: auto;
     margin-bottom: 10px;
 }
-#carddetails>form>#cardname
+#carddetails>#cardname
 {
     width: 400px;
 }
 
-#carddetails>form>#cardnum
+#carddetails>#cardnum
 {
     width: 200px;
 }
 
-#carddetails>form>#expiry
+#carddetails>#expiry
 {
     width: 100px;
 }
 
-#carddetails>form>label
+#carddetails>label
 {
     font-size: 14px;
     font-weight: 500;
     color: rgb(99, 99, 99)
 }
 
-#carddetails>form>input
+#carddetails>input
 {
     margin-top: 5px;
     margin-bottom: 15px;
 }
 
 
-#carddetails>form>.checkbox
+#carddetails>.checkbox
 {
     margin-bottom: 20px;
 }
@@ -295,6 +295,7 @@ button
 {
     margin-top: 10px;
     padding: 20px;
+    width: 200px;
     border: 0ch;
     border-radius: 3px;
     background-color: rgb(214, 0, 96);
@@ -375,8 +376,11 @@ li
 #right
 {
     width: 35%;
-    display: grid;
-    grid-template-columns: (1,1fr);
+    display: block;
+    /* display: grid;
+    grid-template-columns: (1,1fr); */
+    /* border: 1px solid red; */
+    
 }
 .card
 {
@@ -412,7 +416,7 @@ li
     margin-bottom: 10px;
 }
 
-.cardcont>p:nth-child(5)
+.cardcont>p:nth-child(4)
 {
     margin-bottom: 10px;
 }
@@ -448,4 +452,16 @@ li
 {
     font-size: 12px;
     margin-bottom: 10px;
+}
+
+.complete
+{
+    background-color: white;
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 30px;
 }

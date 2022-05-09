@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(237, 237, 237);
+        }
+        h1
+        {
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .complete
+        {
+            background-color: white;
+            padding: 30px;
+            width: 30%;
+            margin: auto;
+            border-radius: 5px;
+        }
+
+        button
+        {
+            margin-top: 10px;
+            padding: 20px;
+            width: 200px;
+            border: 0ch;
+            border-radius: 3px;
+            background-color: rgb(214, 0, 96);
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: white;
+
+        }
+
+        button:hover
+        {
+            background-color:rgb(255, 0, 115) ;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <h1>Homepage</h1>
+    </div>
+</body>
+<script>
+    var status = JSON.parse(localStorage.getItem("status"))
+    if(status == "success") 
+    {
+        var cont = document.querySelector(".cont")
+        var complete = document.createElement("div")
+        complete.className = ("complete")
+        var close = document.createElement("button")
+        close.textContent= "Close"
+        var text = document.createElement("h3")
+        text.textContent="Booking completed successfully"
+        cont.append(complete)
+        complete.append(text,close)
+    }
+
+    var button = document.querySelector("button")
+    button.addEventListener("click",function(event)
+    {
+        event.preventDefault()
+        localStorage.removeItem("status")
+        window.location.reload()
+    })
+</script>
+</html>
