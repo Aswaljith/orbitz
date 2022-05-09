@@ -6,6 +6,14 @@ var arr = [
     {departing:"Bengaluru to Mumbai",time1:'7:40pm - 9:25pm (1h 45m, nonstop)',plane1:'IndiGo • Sat, May 21',returning:'Mumbai to Raipur',time2:'12:20pm - 2:15pm (1h 55m, nonstop)',plane2:"Indigo • Sun, May 22",charge:112,Taxes_and_fees:26}
 ];
 
+var toflight = document.querySelector("#toflight")
+toflight.addEventListener("click",function(event)
+{
+  event.preventDefault()
+  window.location.href="cart.html"
+})
+
+
 var city = [
     "Raipur (RPR - Raipur)",
     "Delhi (DEL - Indira Gandhi Intl.)",
@@ -39,20 +47,23 @@ function search(){
     });
 }
 
-document.querySelector("#flightDetails").addEventListener("click",myFun);
-function myFun(){
-    var data = [
-        {
-            departing:"Delhi to Goa",
-            time1:'10:00pm - 12:40am (2h 40m, nonstop)',
-            plane1:'Air India • Mon, June 23',
-            returning:'Goa to Delhi',
-            time2:'6:50am - 12:20pm (5h 30m, nonstop)',
-            plane2:"Air India • Tue, June 24",
-            charge:209,
-            Taxes_and_fees:31.28
-        }
-    ];
-    localStorage.setItem("flight",JSON.stringify(data));
-    window.location.href='cart.html';
-}
+var cart = document.querySelectorAll("#flightDetails");
+cart.forEach(element => {
+    element.addEventListener("click",myFun)
+    function myFun(){
+        var data = [
+            {
+                departing:"Delhi to Goa",
+                time1:'10:00pm - 12:40am (2h 40m, nonstop)',
+                plane1:'Air India • Mon, June 23',
+                returning:'Goa to Delhi',
+                time2:'6:50am - 12:20pm (5h 30m, nonstop)',
+                plane2:"Air India • Tue, June 24",
+                charge:209,
+                Taxes_and_fees:31.28
+            }
+        ];
+        localStorage.setItem("flight",JSON.stringify(data));
+        window.location.href="cart.html";
+    }
+});
