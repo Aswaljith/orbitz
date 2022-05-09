@@ -64,7 +64,7 @@
 #data>div:last-child>div:nth-child(2){
     margin: auto;
 }
-#data>div:last-child>div:nth-child(6)>button{
+#search{
     height: 48px;
     width: 100px;
     font-size: 16px;
@@ -72,6 +72,15 @@
     background-color: #C83259;
     border: 0px;
     border-radius: 2px;
+}
+#search:hover{
+    background-color: #832840;
+    cursor: pointer;
+}
+#swap:hover{
+    background-color: rgb(180, 229, 248);
+    border-radius: 100%;
+    cursor: pointer;
 }
 .details{
     display: flex;
@@ -103,6 +112,9 @@
     grid-template-rows: auto;
     background-color: #F5F5F5;
     gap: 20px;
+}
+#flightDetails:hover{
+    cursor: pointer;
 }
 #flight>div:first-child{
     grid-area: 1/1/2/5;

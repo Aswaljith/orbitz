@@ -14,6 +14,31 @@ var city = [
     "Bengaluru (BLR-Kempegowda Intl.)"
 ]
 
+var city1 = document.querySelector("#city1");
+var city2 = document.querySelector("#city2");
+
+document.querySelector("#swap").addEventListener("click",swap);
+function swap(){
+    var temp = city1.innerText;
+    city1.innerText = city2.innerText;
+    city2.innerText = temp;
+}
+
+document.querySelector("#search").addEventListener("click",search);
+function search(){
+    var city = document.querySelectorAll("#flightDetails h4+p");
+    city.forEach(element => {
+        if(element.innerText == "Goa (GOI) - Delhi (DEL)")
+        {
+            element.innerText = "Delhi (DEL) - Goa (GOI)";
+        }
+        else
+        {
+            element.innerText = "Goa (GOI) - Delhi (DEL)";
+        }
+    });
+}
+
 document.querySelector("#flightDetails").addEventListener("click",myFun);
 function myFun(){
     var dep = document.querySelector("#depart").innerText;
@@ -21,11 +46,11 @@ function myFun(){
         {
             departing:"Delhi to Goa",
             time1:'10:00pm - 12:40am (2h 40m, nonstop)',
-            plane1:'Air India • Mon, May 23',
+            plane1:'Air India • Mon, June 23',
             returning:'Goa to Delhi',
             time2:'6:50am - 12:20pm (5h 30m, nonstop)',
-            plane2:"Air India • Tue, May 24",
-            charge:207,
+            plane2:"Air India • Tue, June 24",
+            charge:209,
             Taxes_and_fees:31.28
         }
     ];
