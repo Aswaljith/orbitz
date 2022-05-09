@@ -49,7 +49,6 @@ function search(){
 
 document.querySelector("#flightDetails").addEventListener("click",myFun);
 function myFun(){
-    var dep = document.querySelector("#depart").innerText;
     var data = [
         {
             departing:"Delhi to Goa",
@@ -62,6 +61,8 @@ function myFun(){
             Taxes_and_fees:31.28
         }
     ];
+    localStorage.setItem("flight",JSON.stringify(data));
+    window.location.href='cart.html';
 
 
 
