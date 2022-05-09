@@ -13,13 +13,13 @@ var arr=[
         kind:"Roundtrip",
         departing:"Raipur to Mumbai",
         desc:"Traveler 1:Adult",
-returning:'Mumbai to Raipur',
-time1:'7:40pm - 9:25pm (1h 45m, nonstop)'
-,time2:'12:20pm - 2:15pm (1h 55m, nonstop)'
-,plane1:'IndiGo • Sat, May 21'
-,plane2:"Indigo • Sun, May 22"
-,charge:112,
-Taxes_and_fees:26}];
+        returning:'Mumbai to Raipur',
+        time1:'7:40pm - 9:25pm (1h 45m, nonstop)',
+        time2:'12:20pm - 2:15pm (1h 55m, nonstop)',
+        plane1:'IndiGo • Sat, May 21',
+        plane2:"Indigo • Sun, May 22",
+        charge:112,
+        Taxes_and_fees:26}];
 
 document.querySelector('#container4_1>div>h2').innerText=(arr[arr.length-1].departing);
 document.querySelector('#container4_1>div>h2+p').innerText=(arr[arr.length-1].time1);
