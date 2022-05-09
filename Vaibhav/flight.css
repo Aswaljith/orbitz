@@ -64,7 +64,7 @@
 #data>div:last-child>div:nth-child(2){
     margin: auto;
 }
-#data>div:last-child>div:nth-child(6)>button{
+#search{
     height: 48px;
     width: 100px;
     font-size: 16px;
@@ -73,7 +73,7 @@
     border: 0px;
     border-radius: 2px;
 }
-#data>div:last-child>div:nth-child(6)>button:hover{
+#search:hover{
     background-color: #832840;
     cursor: pointer;
 }

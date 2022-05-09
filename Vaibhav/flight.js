@@ -24,6 +24,21 @@ function swap(){
     city2.innerText = temp;
 }
 
+document.querySelector("#search").addEventListener("click",search);
+function search(){
+    var city = document.querySelectorAll("#flightDetails h4+p");
+    city.forEach(element => {
+        if(element.innerText == "Goa (GOI) - Delhi (DEL)")
+        {
+            element.innerText = "Delhi (DEL) - Goa (GOI)";
+        }
+        else
+        {
+            element.innerText = "Goa (GOI) - Delhi (DEL)";
+        }
+    });
+}
+
 document.querySelector("#flightDetails").addEventListener("click",myFun);
 function myFun(){
     var dep = document.querySelector("#depart").innerText;
