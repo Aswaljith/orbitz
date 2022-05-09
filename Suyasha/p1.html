@@ -23,7 +23,7 @@
             <p class="card-text">4.5/5 Wonderful</p>
             
             <h2> $419 <del> $699</del><span>total </span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
         </div>
 
         <div class="card" >
@@ -35,7 +35,7 @@
             <p class="card-text">Calangute</p>
             <p class="card-text">4.4/5 Excellent</p>
             <h2> $419 <del>$699</del> <span> total</span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
 
 
         </div>
@@ -48,7 +48,7 @@
             <p class="card-text">Arossim</p>
             <p class="card-text">4.2/5 Very Good</p>
             <h2> $419 <del> $699</del> <span> total </span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
 
         </div>
 
@@ -61,7 +61,7 @@
             <p class="card-text">Saipem </p>
             <p class="card-text">4.2/5 Very Good</p>
             <h2> $419 <del>$699</del> <span> total  </span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
 
         </div>
         <div class="card" >
@@ -73,7 +73,7 @@
             <p class="card-text">Benaulim </p>
             <p class="card-text">4.1/5 Very Good</p>
             <h2> $419 <del>$699</del> <span> total  </span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
 
         </div>
         <div class="card" >
@@ -85,35 +85,35 @@
             <p class="card-text">Anjuna</p>
             <p class="card-text">4.1/5 Very Good</p>
             <h2> $419 <del>$699</del> <span> total  </span> </h2>
-            <button onclick="reserve">Reserve</button>
+            <button id="reserve">Reserve</button>
 
 
 </div></div></body></html>
 
 
-<script>
-const search=()=>{
-    const searchbox=document.getElementById("search").value;
-    const storeitem=document.getElementById("card")
-    const product=document.querySelectorAll("box-img")
-    const pname=document.getElementByTagName("h2")
+<script src="p2.js">
+// const search=()=>{
+//     const searchbox=document.getElementById("search").value;
+//     const storeitem=document.getElementById("card")
+//     const product=document.querySelectorAll("box-img")
+//     const pname=document.getElementByTagName("h2")
 
-    for(var i =0;i<pname.length;i++)
-    {
-        let match=product[i].getElementsByTagName('h2')[0];
+//     for(var i =0;i<pname.length;i++)
+//     {
+//         let match=product[i].getElementsByTagName('h2')[0];
 
-        if(match){
-            let textvalue=match.textContent|| match.innerHTML
+//         if(match){
+//             let textvalue=match.textContent|| match.innerHTML
 
-            if(textvalue.toUpperCase().indexOf(searchbox)>-1){
-                product[i].style.display="";
-            }
-            else{
-                product[i].style.display="none";
-            }
-        }
-    }
-}
+//             if(textvalue.toUpperCase().indexOf(searchbox)>-1){
+//                 product[i].style.display="";
+//             }
+//             else{
+//                 product[i].style.display="none";
+//             }
+//         }
+//     }
+// }
 
 
 
