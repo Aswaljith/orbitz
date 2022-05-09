@@ -1,0 +1,224 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+#nav{
+    width: 100%;
+    padding: 20px 80px 20px 80px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00253c;
+}
+#nav>div{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#nav>div:first-child{
+    width: 27%;
+    justify-content: space-between;
+}
+#nav img+div{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav>div:last-child>div{
+    margin-left: 30px;
+}
+#data{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+#data>div{
+    width: 100%;
+    display: flex;
+}
+#data>div:first-child{
+    color: #007E8F;
+    font-size: 13px;
+    margin: 15px;
+}
+#data>div:first-child>div{
+    margin-right: 10px;
+}
+#data>div:first-child>img{
+    height: 18px;
+    width: 18px;
+    margin-right: 20px;
+}
+#data>div:last-child{
+    display: grid;
+    margin: 0px 10px 10px 10px;
+    grid-template-columns: 23% 2% 23% 13% 13% 8%;
+    grid-template-rows: 48px;
+    gap: 10px;
+}
+#data>div:last-child>div:nth-child(2){
+    margin: auto;
+}
+#data>div:last-child>div:nth-child(6)>button{
+    height: 48px;
+    width: 100px;
+    font-size: 16px;
+    color: white;
+    background-color: #C83259;
+    border: 0px;
+    border-radius: 2px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    height: 48px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+.details>img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.details>img+div>div:first-child{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.details>img+div>div:last-child{
+    width: 100%;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#flight{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(17,1fr);
+    grid-template-rows: auto;
+    background-color: #F5F5F5;
+    gap: 20px;
+}
+#flight>div:first-child{
+    grid-area: 1/1/2/5;
+    margin: 20px;
+}
+#flight>div:first-child>div:first-child{
+    font-size: 18px;
+    color: #1F1F1F;
+}
+#flight>div:last-child{
+    grid-area: 1/5/2/15;
+}
+.filghtBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.boxHead{
+    margin-top: 30px;
+    color: #616161;
+    display: flex;
+    justify-content: space-between;
+}
+.boxBody{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.boxBody>div{
+    display: flex;
+    align-items: center;
+}
+.boxBody p{
+    font-size: 14px;
+    color: #616161;
+}
+.checkbox{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: white;
+    border: 2px solid #999999;
+}
+.downBox{
+    margin-top: 30px;
+}
+.downBox>div:first-child{
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-bottom: 15px;
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,70px);
+    gap: 10px;
+}
+.grids>div{
+    border-radius: 5px;
+    border: 1px solid #999999;
+}
+.grids img{
+    height: 100%;
+    width: 100%;
+}
+#flightDetails{
+    margin-top: 20px;
+}
+#flightDetails>div{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+}
+#flightDetails>div img{
+    height: 20px;
+    width: 20px;
+}
+#flightDetails>div p{
+    font-size: 13px;
+}
+#flightDetails>div>div:nth-child(2){
+    font-size: 13px;
+    text-align: center;
+}
+#left>h4{
+    margin-bottom: 5px;
+}
+#left>div:last-child{
+    font-size: 13px;
+    margin-top: 10px;
+}
+#left>p+div{
+    display: flex;
+    align-items: center;
+}
+#left>p+div>div:last-child{
+    font-size: 13px;
+}
+#right{
+    text-align: right;
+}
+#right p{
+    font-size: 10px;
+    margin-left: 5px;
+    color: #8C1397;
+}
+#right>div{
+    display: flex;
+    justify-content: right;
+}
+#right>h6{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    color: #616161;
+}
