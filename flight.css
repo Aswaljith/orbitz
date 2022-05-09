@@ -234,3 +234,28 @@
     font-weight: 100;
     color: #616161;
 }
+
+button
+{
+    margin-top: 10px;
+    padding: 20px;
+    width: 200px;
+    border: 0ch;
+    border-radius: 3px;
+    background-color: rgb(214, 0, 96);
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+button:hover
+{
+    background-color:rgb(255, 0, 115) ;
+    cursor: pointer;
+}
+
+#toflight
+{
+  margin-top: 60px;
+}

@@ -6,6 +6,14 @@ var arr = [
     {departing:"Bengaluru to Mumbai",time1:'7:40pm - 9:25pm (1h 45m, nonstop)',plane1:'IndiGo • Sat, May 21',returning:'Mumbai to Raipur',time2:'12:20pm - 2:15pm (1h 55m, nonstop)',plane2:"Indigo • Sun, May 22",charge:112,Taxes_and_fees:26}
 ];
 
+var toflight = document.querySelector("#toflight")
+toflight.addEventListener("click",function(event)
+{
+  event.preventDefault()
+  window.location.href="cart.html"
+})
+
+
 var city = [
     "Raipur (RPR - Raipur)",
     "Delhi (DEL - Indira Gandhi Intl.)",
@@ -54,6 +62,7 @@ function myFun(){
             Taxes_and_fees:31.28
         }
     ];
-    localStorage.setItem("flight",JSON.stringify(data));
-    window.location.href='cart.html';
+
+
+
 }

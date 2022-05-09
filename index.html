@@ -191,6 +191,7 @@ navList.classList.remove("_Menus-show");
   
 
 </div>
+<button id="toflight">to flight page</button>
 </body>
 <script>
       var status = JSON.parse(localStorage.getItem("status"))
@@ -214,6 +215,13 @@ navList.classList.remove("_Menus-show");
         event.preventDefault()
         localStorage.removeItem("status")
         window.location.reload()
+    })
+
+    toflight = document.querySelector("#toflight")
+    toflight.addEventListener("click",function(event)
+    {
+      event.preventDefault()
+      window.location.href="flight.html"
     })
 </script>
  
