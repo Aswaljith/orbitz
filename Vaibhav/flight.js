@@ -30,4 +30,5 @@ function myFun(){
         }
     ];
     localStorage.setItem("flight",JSON.stringify(data));
+    window.location.href='cart.html';
 }
