@@ -73,6 +73,15 @@
     border: 0px;
     border-radius: 2px;
 }
+#data>div:last-child>div:nth-child(6)>button:hover{
+    background-color: #832840;
+    cursor: pointer;
+}
+#swap:hover{
+    background-color: rgb(180, 229, 248);
+    border-radius: 100%;
+    cursor: pointer;
+}
 .details{
     display: flex;
     align-items: center;
@@ -103,6 +112,9 @@
     grid-template-rows: auto;
     background-color: #F5F5F5;
     gap: 20px;
+}
+#flightDetails:hover{
+    cursor: pointer;
 }
 #flight>div:first-child{
     grid-area: 1/1/2/5;
