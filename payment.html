@@ -15,7 +15,7 @@
     <div class="navbar">
         <div class="navsec">
             <img src="https://www.orbitz.com/_dms/header/logo.svg?locale=en_US&siteid=70201" alt="">
-            <!-- <p><a href="#"></a>user name</p> -->
+            <p><a href="signin.html" id="signin">sign in</a></p>
         </div>
 
     </div>
@@ -47,10 +47,10 @@
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div id="userdetails">
-                    <h5><b>Room 1:</b> 2 Adults 2 Double Beds Non-smoking</h5>
+                    <h5 id="userheadh5"><b id="inputhead">Room 1:</b> 2 Adults 2 Double Beds Non-smoking</h5>
                     <div class="green">
                         <i class="fa-solid fa-check"></i>
-                        <h5>Free parking</h5>
+                        <h5 id="freeparking">Free parking</h5>
                         <i class="fa-solid fa-check"></i>
                         <h5>Free WiFi</h5>
                     </div>
@@ -91,22 +91,22 @@
                 </div>
                 <div>
                     <div id="shield-h">
-                        <h3>Protect your hotel</h3>
+                        <h3 id="shieldtext">Protect your hotel</h3>
                         <h5>Recommended</h5>    
                     </div>
                     <h5><b>Note:</b> If you are a resident of WASHINGTON state, please click here to view products that you are eligible to purchase.</h5>
                     <h5><b>4 reasons you might need travel protection</b></h5>
                     <ol>
-                        <li>You get delayed for covered reasons and miss a night of your hotel stay</li>
-                        <li>You're sick and don't use all your hotel nights</li>
-                        <li>You need to extend your trip due to the illness of a travel companion</li>
-                        <li>You need up to $10,000 for covered medical expenses while on your trip</li>
+                        <li id="list1">You get delayed for covered reasons and miss a night of your hotel stay</li>
+                        <li id="list2">You're sick and don't use all your hotel nights</li>
+                        <li id="list3">You need to extend your trip due to the illness of a travel companion</li>
+                        <li id="list4">You need up to $10,000 for covered medical expenses while on your trip</li>
                     </ol>
                     <h5>Select Yes or No to continue booking</h5>
                     <div class="checkbox">
                         <input type="radio" id="radio1" name="protection" checked>
                         <div>
-                            <p>Yes, I want Hotel Booking Protection Plus for my trip.</p>
+                            <p id="radio1text">Yes, I want Hotel Booking Protection Plus for my trip.</p>
                             <div>
                                 <h3>$8.00</h3>
                                 <p>per person</p>
@@ -174,12 +174,12 @@
             <div id="lastsec">
                 <h5>Important information about your booking</h5>
                 <ul>
-                    <li>Cancellations or changes made after 11:59pm (property local time) on May 11, 2022 or no-shows are subject to a property fee equal to 100% of the total amount paid for the reservation.</li>
-                    <li>Front desk staff will greet guests on arrival</li>
-                    <li>You'll be asked to pay the following charges at the property:</li>
+                    <li id="lastli1">Cancellations or changes made after 11:59pm (property local time) on May 11, 2022 or no-shows are subject to a property fee equal to 100% of the total amount paid for the reservation.</li>
+                    <li id="lastli2">Front desk staff will greet guests on arrival</li>
+                    <li id="lastli3">You'll be asked to pay the following charges at the property:</li>
                     <ul>
-                        <li>New Year's Eve (31 December) Gala Dinner per adult: INR 10000</li>
-                        <li>New Year's Eve (31 December) Gala Dinner per child: INR 5000 (from 7 to 12 years old)</li>
+                        <li id="lastli4">New Year's Eve (31 December) Gala Dinner per adult: INR 10000</li>
+                        <li id="lastli5">New Year's Eve (31 December) Gala Dinner per child: INR 5000 (from 7 to 12 years old)</li>
                     </ul>
                 </ul>
                 <p>By clicking on the button below, I acknowledge that I have reviewed the Privacy Statement and Government Travel Advice and have reviewed and accept the Rules & Restrictions and Terms of Use.</p>
@@ -201,39 +201,7 @@
             </div>
         </div>
         <div id="right">
-            <!-- <div class="card">
-                <div class="cardimg">
-                    <img src="https://images.trvl-media.com/hotels/67000000/66040000/66031300/66031217/b97c090e_l.jpg" alt="">
-                    <h5>The Westin Goa</h5>
-                </div>
-                <div class="cardcont">
-                    <h4>4.8/5 Exceptional (11 reviews)</h4>
-                    <p>Guests rated this property 4.9/5 for cleanliness</p>
-                    <p>1 Room: Room, 2 Double Beds, Non Smoking, City View</p>
-                    <p>Check-in: Wed, May 18</p>
-                    <p>Check-out: Thu, May 19</p>
-                    <p>1-night stay</p>
-                </div> -->
             <div id="amount">
-                <!-- <h3>Price details</h3>
-                <hr>
-                <div class="price">
-                    <p>1 room x 1 night</p>
-                    <p>$180.01</p>
-                </div>
-                <div class="price">
-                    <p>Taxes and fees</p>
-                    <p>$32.40</p>
-                </div>
-                <div class="price">
-                    <p>Hotel Booking Protection Plus</p>
-                    <p>$16.00</p>
-                </div>
-                <hr>
-                <div class="price">
-                    <h3>Total</h3>
-                    <h3>$212.41</h3>
-                </div> -->
             </div>
         </div>
     </div>
@@ -247,35 +215,54 @@
 
 
 
-    var data=[]
-    var dataobj=
-    {
-        user:"Aswal jith",
-        type:"stay",
-        img:"https://images.trvl-media.com/hotels/67000000/66040000/66031300/66031217/b97c090e_l.jpg",
-        itemname:"The Westin Goa",
-        review:"4.8/5 Exceptional (11 reviews)",
-        desc:"1 Room",
-        fromdate:"Check-in: Wed, May 18",
-        todate:"Check-out: Thu, May 19",
-        totaldays:"1-night stay",
-        amount:"180.01"
-    }
+    // var data=[]
 
-    data.push(dataobj)
-    localStorage.setItem("booking-data",JSON.stringify(data))
+    var cartdata=JSON.parse(localStorage.getItem("flight"))
+    console.log(cartdata)
+    // var dataobj=
+    // {
+    //     user:"Aswal jith",
+    //     mail:"aswaljith@gmail.com",
+    //     type:"stay",
+    //     img:"https://images.trvl-media.com/hotels/67000000/66040000/66031300/66031217/b97c090e_l.jpg",
+    //     itemname:"The Westin Goa",
+    //     review:"4.8/5 Exceptional (11 reviews)",
+    //     desc:"1 Room",
+    //     fromdate:"Check-in: Wed, May 18",
+    //     todate:"Check-out: Thu, May 19",
+    //     totaldays:"1-night stay",
+    //     amount:"180.01"
+    // }
 
+    // var dataobj=
+    // {
+    //     user:"Arun david",
+    //     mail:"arundavid@gmail.com",
+    //     type:"flight",
+    //     from_to:"Delhi (DEL) to Goa (GOI)",
+    //     itemname:"Air india 883",
+    //     kind:"One way flight",
+    //     desc:"Traveler 1:Adult",
+    //     fromdate:"Mon, May 23",
+    //     todate:"Tue, May 24",
+    //     totaldays:"10:00pm - 12:40am (2h 40m)",
+    //     amount:"78.88"
+    // }
 
-    var lsdata=JSON.parse(localStorage.getItem("booking-data"))
+    // data.push(dataobj)
+    // localStorage.setItem("booking-data",JSON.stringify(data))
+    // var lsdata=JSON.parse(localStorage.getItem("booking-data"))
    
-    lsdata.forEach(function(ele)
+    cartdata.forEach(function(ele)
     {
         if(ele.type == "stay")
         {
-            var nav = document.querySelector(".navsec")
-            username=document.createElement("p")
-            username.textContent="Hello"+ " " +ele.user
-            nav.append(username)
+            var name = document.querySelector("#username")
+            name.textContent=ele.mail
+            
+            var nav = document.querySelector("#signin")
+            nav.textContent="Hello"+ " " +ele.user
+
             var container = document.querySelector("#right")
 
             var card = document.createElement("div")
@@ -308,9 +295,6 @@
 
             var totaldays = document.createElement("p")
             totaldays.textContent = ele.totaldays
-
-            // var amount = document.createElement("p")
-            // amount.textContent = ele.amount
 
             cardcont.append(review,desc,fromdate,todate,totaldays)
             card.append(imgsec,cardcont)
@@ -347,13 +331,6 @@
              var hr2 = document.createElement("hr")
 
              var sum = (Number(ele.amount) + Number(taxp2.textContent) + Number(protectionp2.textContent))
-            //  var sum = (Number(ele.amount) + Number(taxp2.textContent)
-
-            // removepro()
-            //  {
-            //     var sum = (Number(ele.amount) + Number(taxp2.textContent)+ 0)
-            //  }
-
             var total = document.createElement("div")
             total.className = ("price")
             var th31 = document.createElement("h3")
@@ -374,44 +351,114 @@
 
         else if(ele.type == "flight")
         {
+            var nav = document.querySelector("#signin")
+            nav.textContent="Hello"+ " " +ele.user
+
+            var name = document.querySelector("#username")
+            name.textContent=ele.mail
+            lsec1h5 = document.querySelector("#userheadh5")
+            lsec1h5.textContent="Who's traveling?"
+            lsec1h5.style.fontWeight = "bold"
+
+            var stext=document.querySelector("#shieldtext")
+            stext.textContent="Protect your flight "
             var container = document.querySelector("#right")
-            var card = document.createElement("div")
-            container.className = ("card")
-            container.append(card)
 
-            var imgsec = document.createElement("div")
-            imgsec.className = ("cardimg")
+            var list1 = document.querySelector("#list1")
+            list1.textContent="100% flight reimbursement if you're sick and can't travel"
+            var list2 = document.querySelector("#list2")
+            list2.textContent="$1,000 for covered lost baggage, including laptop, phone or camera"
+            var list3 = document.querySelector("#list3")
+            list3.textContent="$50,000 for covered emergency medical transportation"
 
-            var img = document.createElement("img")
-            img.style.width="100%"
-            img.src = ele.img
-            var itemname = document.createElement("h5")
-            itemname.textContent = ele.itemname
+            var list4 = document.querySelector("#list4")
+            list4.remove()
             
-            imgsec.append(img,itemname)
+            var quote=document.querySelector("#quote")
+            quote.textContent="“ I didn't know I would get a refund, thought I would get a credit with the same airline. It will make booking the trip easier, when my husband gets better. -Mary C., Gloucester, VA"
+            radiotext = document.querySelector("#radio1text")
+            radiotext.textContent="Yes, I want to add the Flight Protection Plan to my flight."
 
-            var cardcont = document.createElement("div")
-            cardcont.className = ("cardcont")
-            var review = document.createElement("h4")
-            review.textContent = ele.review
+            var last1 = document.querySelector("#lastli1")
+            last1.textContent="Review your trip details to make sure the dates and times are correct."
+            var last2 = document.querySelector("#lastli2")
+            last2.textContent="Check your spelling. Flight passenger names must match government-issued photo ID exactly."
+            var last3 = document.querySelector("#lastli3")
+            last3.textContent="Review the terms of your booking:"
+            var last4 = document.querySelector("#lastli4")
+            last4.textContent="We understand that sometimes plans change. We do not charge a cancel or change fee. When the airline charges such fees in accordance with its own policies, the cost will be passed on to you."
+            var last5 = document.querySelector("#lastli5")
+            last5.textContent="Tickets are nonrefundable and nontransferable. A fee of ₹2,500 per ticket is charged for itinerary changes. Name changes are not allowed."
 
-            var desc = document.createElement("p")
-            desc.textContent = ele.desc
 
-            var fromdate = document.createElement("p")
-            fromdate.textContent = ele.fromdate
+            var parking = document.querySelector("#freeparking")
+             parking.textContent = "Free cancellation in 24Hrs"
 
-            var todate = document.createElement("p")
-            todate.textContent = ele.todate
 
-            var totaldays = document.createElement("p")
-            totaldays.textContent = ele.totaldays
+            var amountsec = document.querySelector("#amount")
 
-            var amount = document.createElement("p")
-            amount.textContent = ele.amount
+            var phead = document.createElement("h3")
+            phead.textContent = ele.kind
+            
 
-            cardcont.append(review,desc,fromdate,todate,totaldays,amount)
-            card.append(imgsec,cardcont)
+            var hr1 = document.createElement("hr")
+
+            var desc = document.createElement("div")
+            desc.className = ("price")
+             var descp1 = document.createElement("p")
+             descp1.textContent = ele.departing+" & " +ele.returning
+             var descp2 = document.createElement("p")
+             descp2.textContent = ele.charge
+
+             
+            var plane =  document.createElement("div")
+            plane.className = ("price")
+             var plane1 = document.createElement("p")
+             plane1.textContent = ele.plane1+" & "+ele.plane2
+             plane1.style.color = ("red")
+             var plane_fee = document.createElement("p")
+             plane_fee.textContent = ""
+
+             var addd1 =  document.createElement("div")
+            addd1.className = ("price")
+             var addl1 = document.createElement("p")
+             addl1.textContent = ele.desc
+
+             var tax =  document.createElement("div")
+            tax.className = ("price")
+             var taxp1 = document.createElement("p")
+             taxp1.textContent = "Taxes and fees"
+             var taxp2 = document.createElement("p")
+             taxp2.textContent = ele.Taxes_and_fees
+
+         
+            
+            var protection = document.createElement("div")
+            protection.className = ("price")
+            var protectionp1 = document.createElement("p")
+             protectionp1.textContent = "Flight Protection Plan Plus"
+            var protectionp2 = document.createElement("p")
+             protectionp2.className = ("prop2")
+             protectionp2.textContent = "16.00"
+
+             var hr2 = document.createElement("hr")
+
+             var sum = (Number(ele.charge) + Number(protectionp2.textContent) + Number(taxp2.textContent))
+            var total = document.createElement("div")
+            total.className = ("price")
+            var th31 = document.createElement("h3")
+            var th32 = document.createElement("h3")
+            th31.textContent = ("Total")
+            th32.textContent= ("$"+sum)
+            amountsec.append(phead,hr1,desc,plane,protection,tax,hr2,total)
+             plane.append(plane1,plane_fee)
+             desc.append(descp1,descp2)
+             tax.append(taxp1,taxp2)
+             protection.append(protectionp1,protectionp2)
+             total.append(th31,th32)
+             addd1.append(addl1)
+
+
         }
 
         else
